@@ -41,6 +41,10 @@ bot.on('message', msg => {
     if (msg.content === "#Connard"){
         msg.reply("Désolé je ne peut pas etre un connard est un bot !")
     }
+    if (msg.content === "#Guide"){
+        msg.reply("test")
+        msg.reply("test1")
+    }
 });
 
 bot.login(token);
