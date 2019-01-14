@@ -42,8 +42,13 @@ bot.on('message', msg => {
         msg.reply("Désolé je ne peut pas etre un connard est un bot !")
     }
     if (msg.content === "#Guide"){
-        msg.reply("test")
-        msg.reply("test1")
+        msg.reply("Tout les ventes que vous allez faire, doive être mise dans le Channel #les-chiffre-daffaire.")
+        msg.reply("Si vous devez être absent, prévenez 1 jour avant dans le Channel #carnet-dabsence.")
+        msg.reply("Il faut être souvent actif pour validé votre test de 3 Jour.")
+        msg.reply("Pour tout autres questions demander a White-Clara ou a Clito-Rine.")
+    }
+        if (msg.content === "#Help"){
+        msg.reply("Cette commandes n'est pas encore disponible !")
     }
 });
 
