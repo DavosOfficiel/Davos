@@ -23,19 +23,19 @@ bot.on('message', msg => {
         msg.channel.send("https://alexpgm.000webhostapp.com/")
         console.log("Une personne a demandé pour aller sur ton site.")
     }
-    if (msg.content === "#Salut"){
+    if (msg.content === "!Salut"){
         msg.reply("Comment va tu ?.")
     }
-    if (msg.content === "#Bien et toi ?"){
+    if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui toujour bien.")
     }
-    if (msg.content === "#chiffre"){
+    if (msg.content === "!Chiffre"){
         msg.reply("n'oublier pas de noter vos chiffres d'affaires !")
     }
-    if (msg.content === "#RecrutementON"){
+    if (msg.content === "!RecrutementON"){
         msg.reply("Les recrutement sont ouvert !")
     }
-    if (msg.content === "#RecrutementOFF"){
+    if (msg.content === "!RecrutementOFF"){
         msg.reply("Les recrutement sont Fermer !")
     }
 });
