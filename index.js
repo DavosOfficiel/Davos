@@ -20,13 +20,18 @@ bot.on('message', msg => {
         msg.reply("Heureux de te revoir parmis nous.")
     }
     if (msg.content.match(/salut/i)) {
-            msg.reply('Je suis d\'accord avec toi.')
+            msg.reply('Salut.')
     }
     if (msg.content === prefix + "site"){
         msg.channel.send("https://alexpgm.000webhostapp.com/")
         console.log("Une personne a demandé pour aller sur ton site.")
     }
-
+    if (msg.content === "salut"){
+        msg.reply("Comment va tu ?.")
+    }
+    if (msg.content === "bien et toi ?"){
+        msg.reply("Oui toujour bien.")
+    }
 });
 
 bot.login(token);
