@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
+const messageEnMinuscules = str.toLowerCase();
 const prefix = ("?");
 
 bot.on('ready', function () {
@@ -29,6 +30,11 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
+  if (message.content.includes('test')){
+  message.delete()
+  message.channel.sendMessage("**@&#$%!**")
+  message.author.send('Le mot **test** est interdit!')
+}
 });
 
 bot.login(token);
