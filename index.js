@@ -48,7 +48,6 @@ bot.on('message',function(message){
   ){
     message.reply('bonjour !')
   }
-}
 });
 
 bot.login(token);
