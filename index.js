@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
-const m = await message.channel.send("Ping?");
+const m = await message.channel.send("!Ping");
 const prefix = ("?");
 
 bot.on('ready', function () {
