@@ -31,19 +31,19 @@ bot.on('message', msg => {
     }
 function includesRealy(msg,str){
   return(
-    msg.content.includes(str) ||
-    msg.content.includes(str.toUpperCase()) ||
-    msg.content.includes(str.toLowerCase())
+    msg.content.includes(str)
+    msg.content.includes(str.toUpperCase()
+    msg.content.includes(str.toLowerCase()
   )
 }
 bot.on('message',function(message){
   if(
-    includesRealy(message,'Bonjour') ||
-    includesRealy(message,'Salut') ||
-    includesRealy(message,'Hey') ||
-    includesRealy(message,'Coucou') ||
-    includesRealy(message,'Bien') ||
-    includesRealy(message,'Yo') ||
+    includesRealy(message,'Bonjour')
+    includesRealy(message,'Salut')
+    includesRealy(message,'Hey')
+    includesRealy(message,'Coucou')
+    includesRealy(message,'Bien')
+    includesRealy(message,'Yo')
     includesRealy(message,'Hola')
   ){
     message.reply('bonjour !')
