@@ -40,4 +40,3 @@ bot.on('message', msg => {
 });
 
 bot.login(token);
-client.login(config.token);
