@@ -29,25 +29,10 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-function includesRealy(msg,str){
-  return(
-    msg.content.includes(str)
-    msg.content.includes(str.toUpperCase()
-    msg.content.includes(str.toLowerCase()
-  )
-}
-bot.on('message',function(message){
-  if(
-    includesRealy(message,'Bonjour')
-    includesRealy(message,'Salut')
-    includesRealy(message,'Hey')
-    includesRealy(message,'Coucou')
-    includesRealy(message,'Bien')
-    includesRealy(message,'Yo')
-    includesRealy(message,'Hola')
-  ){
-    message.reply('bonjour !')
-  }
+    bot.on('message', message => {
+    if (message.content === 'ping') {
+    message.reply('pong !')
+    }
 });
 
 bot.login(token);
