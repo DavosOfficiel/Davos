@@ -29,11 +29,25 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-  if (message.content.includes('test')){
-  message.delete()
-  message.channel.sendMessage("**@&#$%!**")
-  message.author.send('Le mot **test** est interdit!')
+function includesRealy(msg,str){
+  return(
+    msg.content.includes(str) ||
+    msg.content.includes(str.toUpperCase()) ||
+    msg.content.includes(str.toLowerCase())
+  )
 }
+ bot.on('message',function(message){
+  if(
+    includesRealy(message,'Bonjour') ||
+    includesRealy(message,'Salut') ||
+    includesRealy(message,'Hey') ||
+    includesRealy(message,'Coucou') ||
+    includesRealy(message,'Bien') ||
+    includesRealy(message,'Yo') ||
+    includesRealy(message,'Hola')
+  ){
+    message.reply('Bonjour !')
+  }
 });
 
 bot.login(token);
