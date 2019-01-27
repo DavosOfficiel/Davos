@@ -36,7 +36,7 @@ function includesRealy(msg,str){
     msg.content.includes(str.toLowerCase())
   )
 }
- bot.on('message',function(message){
+bot.on('message',function(message){
   if(
     includesRealy(message,'Bonjour') ||
     includesRealy(message,'Salut') ||
@@ -46,8 +46,9 @@ function includesRealy(msg,str){
     includesRealy(message,'Yo') ||
     includesRealy(message,'Hola')
   ){
-    message.reply('Bonjour !')
+    message.reply('bonjour !')
   }
+}
 });
 
 bot.login(token);
