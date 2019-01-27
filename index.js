@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
-const messageEnMinuscules = str.toLowerCase();
 const prefix = ("?");
 
 bot.on('ready', function () {
