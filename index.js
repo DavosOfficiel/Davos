@@ -29,7 +29,7 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-    if (commande === "!purge"){
+    if (commande === "purge"){
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
     return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
      message.channel.bulkDelete(fetched)
