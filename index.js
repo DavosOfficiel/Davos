@@ -29,8 +29,8 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-    if (message.content === 'ping') {
-    message.reply('pong !')
+    if (msg.content === 'ping') {
+        msg.reply('pong !')
     }
 });
 
