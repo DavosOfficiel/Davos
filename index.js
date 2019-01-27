@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
-const m = await message.channel.send("Ping?");
+const deleteCount = parseInt(args[0], 10);
 const prefix = ("?");
 
 bot.on('ready', function () {
@@ -30,8 +30,12 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-    if(command === "ping") {
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+    if (commande === "!purge"){
+    if(!deleteCount || deleteCount < 2 || deleteCount > 100)
+    return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+    const fetched = await message.channel.fetchMessages({limit: deleteCount});
+     message.channel.bulkDelete(fetched)
+     .catch(error => message.reply(`Couldn't delete messages because of: ${error}`))
     }
 });
 
