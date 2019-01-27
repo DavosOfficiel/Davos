@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
 const deleteCount = parseInt(args[0], 10);
-const fetched = await message.channel.fetchMessages({limit: deleteCount});
 const prefix = ("?");
 
 bot.on('ready', function () {
