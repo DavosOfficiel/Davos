@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.token;
+const m = await message.channel.send("Ping?");
 const prefix = ("?");
 
 bot.on('ready', function () {
@@ -30,7 +31,6 @@ bot.on('message', msg => {
         msg.reply("Oui je vais bien.")
     }
     if(command === "!Ping") {
-    const m = await message.channel.send("Ping");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
 });
