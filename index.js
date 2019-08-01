@@ -32,26 +32,6 @@ bot.on('message', msg => {
     if (msg.content === 'ping') {
         msg.reply('pong !')
     }
-  if (msg.content.startsWith('!play')) {
-    let voiceChannel = msg.guild.channels
-      .filter(function (Musique) { return channel.type === 'voice' })
-      .first()
-    let args = msg.content.split(' ')
-    voiceChannel
-      .join()
-      .then(function (connection) {
-        let stream = YoutubeStream(args[1])
-        stream.on('error', function () {
-          msg.reply("Je n'ai pas réussi à lire cette vidéo :(")
-          connection.disconnect()
-        })
-        connection
-          .playStream(stream)
-          .on('end', function () {
-            connection.disconnect()
-          })
-      })
-  }
-})
+
 
 bot.login(token);
