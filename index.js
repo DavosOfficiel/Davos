@@ -33,6 +33,4 @@ bot.on('message', msg => {
         msg.reply('pong !')
     }
 
-
-
 bot.login(token);
