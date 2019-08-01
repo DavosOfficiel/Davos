@@ -34,7 +34,7 @@ bot.on('message', msg => {
     }
   if (msg.content.startsWith('!play')) {
     let voiceChannel = msg.guild.channels
-      .filter(function (vocal1) { return channel.type === 'voice' })
+      .filter(function (Musique) { return channel.type === 'voice' })
       .first()
     let args = msg.content.split(' ')
     voiceChannel
