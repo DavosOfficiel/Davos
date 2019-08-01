@@ -30,7 +30,7 @@ bot.on('message', msg => {
         msg.reply("Oui je vais bien.")
     }
     if (msg.content === "!Qui est le meilleur ?"){
-        msg.reply("C'est Pas toi !.")
+        msg.reply("Pas toi !")
     }
 });
 
