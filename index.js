@@ -29,11 +29,8 @@ bot.on('message', msg => {
     if (msg.content === "!Bien et toi ?"){
         msg.reply("Oui je vais bien.")
     }
-    if (msg.content === "!Qui est le meilleur ?"){
-        msg.reply("Pas toi !")
-    }
-    if (msg.content === "!SmockPixel"){
-        msg.reply(",Pourquoi me dit tu ce serveur ? je n'aime pas ce serveur. Pikachu attaque !")
+    if (msg.content === "!Ip"){
+        msg.reply(", L'ip du serveur n'est pas disponible !")
     }
 });
 
