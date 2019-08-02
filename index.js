@@ -32,6 +32,9 @@ bot.on('message', msg => {
     if (msg.content === "!Ip"){
         msg.reply(", L'ip du serveur n'est pas disponible !")
     }
+    if (msg.content === "!PrincesseOz"){
+        msg.reply("tu veux savoir qui est PrincesseOz, c'est la princesse du serveur")
+    }
 });
 
 bot.login(token);
