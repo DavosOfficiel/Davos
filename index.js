@@ -32,5 +32,4 @@ bot.on('message', msg => {
     if (msg.content === "!Ip"){
         msg.reply(", L'ip du serveur n'est pas disponible !")
     }
-
 bot.login(token);
