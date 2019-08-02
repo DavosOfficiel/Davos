@@ -16,21 +16,14 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', msg => {
-    if (msg.content === "!bonjour"){
+    if (msg.content === "!PikaMon Bonjour"){
         msg.reply("Heureux de te revoir parmis nous.")
     }
-    if (msg.content === prefix + "site"){
-        msg.channel.send("https://alexpgm.000webhostapp.com/")
-        console.log("Une personne a demandé pour aller sur ton site.")
+    if (msg.content === "!PikaMon l'ip du serveur stp ?"){
+        msg.reply(", je ne peut pas te donner l'ip pour le moment.")
     }
-    if (msg.content === "!Salut"){
-        msg.reply("Comment va tu ?.")
-    }
-    if (msg.content === "!Bien et toi ?"){
-        msg.reply("Oui je vais bien.")
-    }
-    if (msg.content === "!Ip"){
-        msg.reply(", L'ip du serveur n'est pas disponible !")
+    if (msg.content === "!PikaMon Ou est le réglement ?"){
+        msg.reply(",Pour le réglement va dans le channel: ☑règlement")
     }
 });
 
