@@ -16,15 +16,19 @@ bot.on('guildMemberAdd', member => {
 });
 
 bot.on('message', msg => {
-    if (msg.content === "!PikaMon Bonjour"){
+    if (msg.content === "!PM Bonjour"){
         msg.reply("Heureux de te revoir parmis nous.")
     }
-    if (msg.content === "!PikaMon l'ip du serveur stp ?"){
+    if (msg.content === "!PM ip"){
         msg.reply(", je ne peut pas te donner l'ip pour le moment.")
     }
-    if (msg.content === "!PikaMon Ou est le réglement ?"){
+    if (msg.content === "!PM réglement"){
         msg.reply(",Pour le réglement va dans le channel: ☑règlement")
     }
+    if (msg.content === "!Huaca de la Luna"){
+        msg.reply("Ce lieu est inconnu, il est juste très bizar")
+    }
+    
 });
 
 bot.login(token);
