@@ -11,22 +11,22 @@ bot.on('ready', function () {
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send('Bienvenue sur le serveur Pikamon!' + member.displayName)
-        console.log(`${member.displayName} à rejoind le serveur Pikamon.`)
+        console.log(`${member.displayName} à rejoind le serveur Jabboh.fr.`)
     }).catch(console.error)
 });
 
 bot.on('message', msg => {
-    if (msg.content === "!PM Bonjour"){
+    if (msg.content === "!Frank Bonjour"){
         msg.reply("Heureux de te revoir parmis nous.")
     }
-    if (msg.content === "!PM ip"){
-        msg.reply(", je ne peut pas te donner l'ip pour le moment.")
+    if (msg.content === "!Frank Contact"){
+        msg.reply(", tu peut envoyer ici un mail à notre équipe: service.jabboh.fr@outlook.fr !")
     }
-    if (msg.content === "!PM réglement"){
-        msg.reply(",Pour le réglement va dans le channel: ☑règlement")
+    if (msg.content === "!Frank Réglement"){
+        msg.reply(",Le réglement n'a pas encore été placé !")
     }
-    if (msg.content === "!Huaca de la Luna"){
-        msg.reply("Ce lieu est inconnu, il est juste très bizar")
+    if (msg.content === "!Frank Pub"){
+        msg.reply(",Non je ne pub pas mais toi tu peux !")
     }
     
 });
