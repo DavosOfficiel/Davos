@@ -30,7 +30,7 @@ bot.on('message', msg => {
     }
     if (msg.content === "!Frank Raconte une blague"){
         msg.reply(",Proverbe ch’ti : Chaque femme mérite qu’on la regarde ? 'Comme si c’était la dernière bière dans le frigo'")
-        msg .reply( ",Qu’est-ce qui est blanc, qui tombe du ciel, et qui finit par -« ard » ? 'La neige **nnard !'" )
+        msg.reply(",Qu’est-ce qui est blanc, qui tombe du ciel, et qui finit par -« ard » ? 'La neige **nnard !'" )
     }
     
 });
