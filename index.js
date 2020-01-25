@@ -28,6 +28,9 @@ bot.on('message', msg => {
     if (msg.content === "!Frank Pub"){
         msg.reply(",Non je ne pub pas mais toi tu peux !")
     }
+    if (msg.content === "!Frank Raconte une blague"){
+        msg.reply(",Proverbe ch’ti : Chaque femme mérite qu’on la regarde ? 'Comme si c’était la dernière bière dans le frigo'")
+    }
     
 });
 
